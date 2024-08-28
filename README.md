@@ -1,5 +1,5 @@
 # UDP-Chat-Application 
-  - This project allows you to chat between Server and Client. When to send the text to frame of Server (Alex) and click to send butten then your text will send Client (Galtonde). Same as Server, Client (Galtonde) can send message to Server (Alex).
+  - This project enables real-time chat communication between a Server (Alex) and a Client (Gaitonde). Messages sent from the Server or Client are displayed on both interfaces, simulating a chat application similar to WhatsApp.
 
 Compile the Java Files :
 -
@@ -7,12 +7,21 @@ Compile the Java Files :
 2. Run the Client
 3. Send text :
 
-    - In the frame of Server (Alex) and Client (Galtonde) write a message to message box and click on send button. The message will display to both of the frame (like whatsapp)
+    - From Server (Alex): Type a message in the Server's message box and click the "Send" button. The message will be displayed in both the Server and Client chat windows.
+    - From Client (Gaitonde): Similarly, type a message in the Client's message box and click the "Send" button. The message will be displayed in both chat windows.
   
 Output :
-  - Server Terminal: Server will displays the watting message (Watting for client!)
-  - Client Terminal: Client will display the connected message (Client is connected!)
-  -  Server Terminal: After the Client connected message, Server will displays the connected message (Server is connected!)
+  - Server Terminal:
+    
+    - Displays a waiting message: `Waiting for client!`
+    - After the client connects, displays: `Client is connected!`
+      
+  - Client Terminal:
+  
+    - Upon connecting to the server, displays: `Client is connected!`
+  - Chat Frames:
+    
+      - Messages sent from either the Server or Client will appear in both chat frames, simulating a real-time chat interface.
 
 
 ![Recording 2024-08-28 032424](https://github.com/user-attachments/assets/40ffdcf8-de74-46b7-9767-666a73663a80)
