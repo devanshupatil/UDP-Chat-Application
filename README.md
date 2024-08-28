@@ -11,6 +11,7 @@ Compile the Java Files :
     - From Client (Gaitonde): Similarly, type a message in the Client's message box and click the "Send" button. The message will be displayed in both chat windows.
   
 Output :
+-
   - Server Terminal:
     
     - Displays a waiting message: `Waiting for client!`
