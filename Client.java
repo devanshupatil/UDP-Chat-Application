@@ -114,16 +114,6 @@ class Freame_2 implements ActionListener {
         String OutPut = textField.getText();
         Right(OutPut);
 
-        // JPanel p2 = formatLabel(OutPut);
-
-        // a1.setLayout(new BorderLayout());
-        // JPanel right = new JPanel(new BorderLayout());
-
-        // right.add(p2, BorderLayout.LINE_END);
-        // vertical.add(right);
-        // vertical.add(Box.createHorizontalStrut(13));
-        // a1.add(vertical, BorderLayout.PAGE_START);
-
         textField.setText("");
         // relode
         frame.repaint();
@@ -202,29 +192,18 @@ public class Client {
         try {
 
             client = new Socket("localhost", 5000);
-            System.out.println("Client is connected to read");
+            System.out.println("Client is connected!");
 
             // for receive the msg
             DataInputStream dataInputStream = new DataInputStream(client.getInputStream());
             freame_2.dataOutputStream = new DataOutputStream(client.getOutputStream());
-
-            // Read data from server
-            // BufferedReader br = new BufferedReader(new
-            // InputStreamReader(client.getInputStream()));
-
+            
             while (true) {
 
                 freame_2.a1.setLayout(new BorderLayout());
                 // this UTF protocall use to read msg from client
                 String msg = dataInputStream.readUTF();
-
-                // JPanel panel = freame.formatLabel(msg);
-
-                // JPanel left = new JPanel(new BorderLayout());
-                // left.add(panel, BorderLayout.LINE_START);
-                // freame.vertical.add(left);
-                // freame.frame.validate();
-
+                
                 freame_2.Left(msg);
                 freame_2.vertical.validate();
 
